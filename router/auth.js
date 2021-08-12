@@ -25,6 +25,17 @@ router.post('/notes', async(req,res) => {
     }
 })
 
+//create data using async and await..
+// router.post("/notes",async(req,res) =>{
+//     try{
+//         const note = new Note(req.body);
+//         const createNote = await note.save();
+//         res.status(201).save(createNote);
+//     }catch(e){
+//         res.status(400).send(e);
+//     }    
+// })
+
 //read data using async and await.. 
 router.get("/notes",async(req,res) =>{
     try{
